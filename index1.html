@@ -1,0 +1,369 @@
+<!DOCTYPE html><!-- This web page is copied by "https://bazhan.wang" --><html lang="zh-CN"><head><meta name="bing-analysis-id" content="332s3b2t313d2z"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--><meta charset="utf-8"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta name="renderer" content="webkit"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta name="referrer" content="never"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta http-equiv="Cache-Control" content="no-siteapp,must-revalidate"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta http-equiv="expires" content="0"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta name="name" itemprop="name" content="桑帛云API"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta name="shareimage" itemprop="image" content="/favicon.ico"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta name="keywords" itemprop="keywords" content="桑帛API|桑帛云助手|桑帛云,爱思电子商务"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta name="description" itemprop="description" content="桑帛云API是一款好用、简便的API接口。实用性强,功能多,免费调用平台,欢迎调用。"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta name="author" content="@0047ol"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <meta name="copyright" content="©0047ol"><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <title>桑帛云API</title> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/png"> 
+  <!-- <link rel="preconnect" href="//cdn.w3cbus.com"> --> 
+  <!-- <link rel="preconnect" href="//cdn.jsdelivr.net"> --> 
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"> 
+  <link type="text/css" rel="stylesheet" href="css/vs.min.css"> 
+  <link type="text/css" rel="stylesheet" href="https://cdn.w3cbus.com/mdui.org/docs/assets/docs/css/highlight-vs2015-style.css"> 
+  <link type="text/css" rel="stylesheet" href="css/mdui.css">
+  <link type="text/css" rel="stylesheet" href="css/mdclub.css">
+  <link type="text/css" rel="stylesheet" href="css/index.css">
+ </head> 
+ <body id="body_content" class="mdui-theme-primary-blue mdui-theme-accent-blue mdui-appbar-with-toolbar"> 
+   <div id="top-titlebar" class="mdui-appbar mdui-appbar-fixed mdui-color-white"> 
+   <div class="mdui-toolbar mdui-color-white"> 
+    <a href="javascript:toggle_drawer();" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i></a> 
+    <a href="javascript:scrolTop('body_content');" class="mdui-typo-title">桑帛云API</a> 
+    <div class="mdui-toolbar-spacer"></div>
+    <a class="mdui-btn mdui-btn-icon mdui-ripple" href="javascript:switch_Themes();"><i class="mdui-icon material-icons" id="home_theme_btn">brightness_4</i></a>
+    <a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-menu="{target:'#toolbar_menu'}"><i class="mdui-icon material-icons">more_vert</i></a> 
+    <ul class="mdui-menu" id="toolbar_menu"> 
+               <li class="mdui-menu-item"><a href="javascript:locaUrl('?action=support');" class="mdui-ripple">赞助支持</a></li>
+          
+          
+          <li class="mdui-menu-item"><a href="javascript:api_admin_login();" class="mdui-ripple">登录</a></li> 
+                   </ul>  
+   </div> 
+  </div>
+       <div class="mc-drawer mdui-drawer mdui-drawer-full-height mdui-drawer-close" id="left-drawer">  
+  <div class="mdui-hidden-sm-down" style="margin-top:64px"></div>
+   <ul class="mdui-list"> 
+   <div class="mdui-card-media mdui-ripple mdui-ripple-white" style="border-radius: 0px"> 
+    <img id="ic_background" src="img/index.png"> 
+    <div class="mdui-card-media-covered mdui-card-media-covered-gradient"> 
+     <div class="mdui-card-primary" style="position:relative;"> 
+      <div class="mdui-card-primary-title"> 
+       <img id="authorimgs" src="favicon.ico" class="mdui-img-circle">
+      </div> 
+      <div class="mdui-typo-title mdui-text-color-white drawer-title-text">桑帛云API-爱思电子商务</div> 
+     </div> 
+    </div> 
+   </div>
+    <a href="javascript:close_drawer();locaUrl('./');"> <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">home</i>
+      <div class="mdui-list-item-content">首页</div>
+      </li></a> 
+            <div class="mdui-collapse" mdui-collapse="">
+      <div class="mdui-collapse-item">
+    
+    </div>
+    <li class="mdui-subheader">更多</li> 
+    <a href="javascript:close_drawer();locaUrl('?action=support');"> <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">thumb_up</i> 
+      <div class="mdui-list-item-content">赞助支持</div>
+      </li></a> 
+      <a href="javascript:close_drawer();locaUrl('?action=about');"> <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">link</i> 
+      <div class="mdui-list-item-content">友情链接</div>
+      </li></a>     
+    <a href="javascript:close_drawer();locaUrl('https://support.qq.com/embed/phone/472818');"> <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-purple">settings</i> 
+      <div class="mdui-list-item-content">API反馈</div>
+      </li></a> 
+         <a href="javascript:close_drawer();locaUrl('https://tool.caonm.net');"> <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">settings</i> 
+      <div class="mdui-list-item-content">桑帛云助手</div>
+      </li></a> 
+      <a href="javascript:close_drawer();locaUrl('https://pay.caonm.net');"> <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">settings</i> 
+      <div class="mdui-list-item-content">桑帛云支付</div>
+      </li></a> 
+      <div class="<a" href="javascript:close_drawer();locaUrl('https://jq.qq.com/?_wv=1027&amp;k=CTinrRTj');"> <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow">settings</i> 
+      <div class="mdui-list-item-content">桑帛API官方群</div>
+      </li>     
+               <li class="mdui-subheader">管理</li> 
+    <a href="javascript:close_drawer();api_admin_login();"> <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">settings</i> 
+      <div class="mdui-list-item-content">后台登录</div>
+      </li></a> 
+       </div></ul> 
+   <div class="copyright"> 
+    <p style="font-size:11px">
+    <br><a href="//beian.miit.gov.cn/" target="_blank">陕ICP备2022000528号-8</a>    <br>©<font class="copyright_year"></font> <a href="/">桑帛云API</a> 
+    </p> 
+   </div> 
+  </div> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <script type="text/javascript" src="https://cdn.w3cbus.com/mdclub.org/static/docs/index.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+  <script type="text/javascript" src="js/0047ol.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <div id="api_edit_dlg_" class="mc-user-edit mdui-dialog">
+   <div class="mdui-dialog-title">
+    <button class="mdui-btn mdui-btn-icon" style="margin-bottom:5px" mdui-dialog-close=""><i class="mdui-icon material-icons mdui-text-color-theme-icon">arrow_back</i></button>   编辑接口</div>
+   <div class="mdui-dialog-content" style="padding:0 24px 0 24px">
+   <div class="mdui-typo-subheading">接口信息</div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口名称</label>
+     <input id="api_edit_dlg_api_name_" class="mdui-textfield-input" type="text" value="" required="">
+     <div class="mdui-textfield-error">名称不能为空</div>
+     <div class="mdui-textfield-helper">请填写接口名称</div>
+   </div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口介绍</label>
+     <textarea id="api_edit_dlg_api_info_" class="mdui-textfield-input" type="text" required=""></textarea>
+     <div class="mdui-textfield-error">介绍不能为空</div>
+     <div class="mdui-textfield-helper">请填写接口介绍</div>
+   </div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口地址</label>
+     <input id="api_edit_dlg_api_url_" class="mdui-textfield-input" type="text" value="" required="">
+     <div class="mdui-textfield-error">地址不能为空</div>
+     <div class="mdui-textfield-helper">请填写完整路径，包含http协议头</div>
+   </div>
+   <div class="mdui-textfield">
+     <label class="mdui-textfield-label">示例参数</label>
+     <input id="api_edit_dlg_api_rest_parm_" class="mdui-textfield-input" type="text" placeholder="（例：key1=value1&amp;key2=value2）" value="" onchange="api_edit_change_dlg_append(,$(this).val())" required="">
+     <div class="mdui-textfield-error">参数不能为空</div>
+     <div class="mdui-textfield-helper">格式：参数名=参数值&amp;参数名=参数值（用于在接口文档展示）</div>
+   </div>
+   <div class="mdui-valign" style="width:100%;padding-top:14px;padding-bottom:14px">
+     <font class="mdui-float-left" style="width:100%;padding-left:-2px">请求方式</font>
+    <label class="mdui-checkbox mdui-float-right">
+    <input id="api_edit_dlg_rest_type_get_" type="checkbox" checked="">
+    <i class="mdui-checkbox-icon"></i><font style="margin-left:-12px;margin-right:10px">GET</font></label>
+    <label class="mdui-checkbox mdui-float-right">
+    <input id="api_edit_dlg_rest_type_post_" type="checkbox" checked="">
+    <i class="mdui-checkbox-icon"></i><font style="margin-left:-12px">POST</font></label>
+   </div>
+   <div class="mdui-divider"></div><br>
+   <div class="mdui-typo-subheading">请求参数</div>
+   <form id="api_edit_dlg_rest_parm_" name="result" onsubmit="return false">
+      </form>
+   <button class="mdui-valign mdui-btn" onclick="api_edit_dlg_append(,0)"><i class="mdui-icon material-icons mdui-text-color-theme-icon-icon mdui-float-left">add</i>  添加</button>
+         <br>
+   <button onclick="api_edit_dlg_save_btn()" class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">保存</button>
+   <br><br><br>
+  </div>
+  </div>
+   
+
+    
+    <div>    
+<script charset="utf-8" id="LA_COLLECT" src="js/js-sdk-pro.min.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+<script>LA.init({id: "JtEX615Edv0Dhic3",ck: "JtEX615Edv0Dhic3"})</script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+ <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="utf-8" src="js/quote.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->       
+                
+                
+<script src="js/main.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+<script>
+swal('桑帛API','\n\n全网最烂最废的API\n置顶的为了让你们知道我网站不止有制图\n官方群810886009欢迎进群\n如果你有好的图片想要投稿\n欢迎进群投稿,感谢使用桑帛API','success'); function AddFavorite(title, url) {
+  try {
+      window.external.addFavorite(url, title);
+  }
+catch (e) {
+     try {
+       window.sidebar.addPanel(title, url,);
+    }
+     catch (e) {
+         alert("抱歉，您所使用的浏览器无法完成此操作。");
+     }
+  }
+}
+</script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+
+
+
+
+
+    <link rel="stylesheet" href="css/gg.css">
+
+  <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-lg-4 mdui-row-xl-5 mdui-grid-list"> 
+  <div id="card_top_content" style="display:none"></div>
+    <div class="mdui-container mdui-col" id="api_card_202"> 
+   <div class="mdui-card mdui-hoverable" style="overflow:visible"> 
+    <div class="mdui-card-header"> 
+    <img class="mdui-card-header-avatar" src="img/mc.png">
+            <div class="mdui-card-header-title" style="margin-left:0">张娜英 <div class="mybadge mdui-color-blue mdui-text-color-white">运行正常</div> <div class="mybadge mdui-color-red mdui-text-color-white">置顶</div></div> 
+      <div class="mdui-card-header-subtitle" style="margin-left:0"><i class="mdui-icon material-icons mdui-text-color-theme-icon subtitle-icon-text">sort</i> </div> 
+    </div>
+    <div class="mdui-card-menu"></div>
+    <div class="mdui-card-content mdui-text-truncate" style="word-wrap:break-word">随机视频</div> 
+    <div class="mdui-card-actions">
+     <button onclick="openUrl('?action=interface&amp;id=202')" class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-float-right">查看</button>
+         </div>
+   </div>
+  </div>
+  <div id="api_edit_dlg_202" class="mc-user-edit mdui-dialog">
+   <div class="mdui-dialog-title">
+    <button class="mdui-btn mdui-btn-icon" style="margin-bottom:5px" mdui-dialog-close=""><i class="mdui-icon material-icons mdui-text-color-theme-icon">arrow_back</i></button>   编辑接口</div>
+   <div class="mdui-dialog-content" style="padding:0 24px 0 24px">
+   <div class="mdui-typo-subheading">接口信息</div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口名称</label>
+     <input id="api_edit_dlg_api_name_202" class="mdui-textfield-input" type="text" value="张娜英" required="">
+     <div class="mdui-textfield-error">名称不能为空</div>
+     <div class="mdui-textfield-helper">请填写接口名称</div>
+   </div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口介绍</label>
+     <textarea id="api_edit_dlg_api_info_202" class="mdui-textfield-input" type="text" required="">随机视频</textarea>
+     <div class="mdui-textfield-error">介绍不能为空</div>
+     <div class="mdui-textfield-helper">请填写接口介绍</div>
+   </div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口地址</label>
+     <input id="api_edit_dlg_api_url_202" class="mdui-textfield-input" type="text" value="http://api.caonm.net/api/zny/m.php" required="">
+     <div class="mdui-textfield-error">地址不能为空</div>
+     <div class="mdui-textfield-helper">请填写完整路径，包含http协议头</div>
+   </div>
+   <div class="mdui-textfield">
+     <label class="mdui-textfield-label">示例参数</label>
+     <input id="api_edit_dlg_api_rest_parm_202" class="mdui-textfield-input" type="text" placeholder="（例：key1=value1&amp;key2=value2）" value="" oninput="api_edit_change_dlg_append(202,$(this).val())" required="">
+     <div class="mdui-textfield-error">参数不能为空</div>
+     <div class="mdui-textfield-helper">格式：参数名=参数值&amp;参数名=参数值（用于在接口文档展示）</div>
+   </div>
+   <div class="mdui-valign" style="width:100%;padding-top:14px;padding-bottom:14px">
+     <font class="mdui-float-left" style="width:100%;padding-left:-2px">请求方式</font>
+    <label class="mdui-checkbox mdui-float-right">
+    <input id="api_edit_dlg_rest_type_get_202" type="checkbox" checked="">
+    <i class="mdui-checkbox-icon"></i><font style="margin-left:-12px;margin-right:10px">GET</font></label>
+    <label class="mdui-checkbox mdui-float-right">
+    <input id="api_edit_dlg_rest_type_post_202" type="checkbox" disabled="">
+    <i class="mdui-checkbox-icon"></i><font style="margin-left:-12px">POST</font></label>
+   </div>
+   <div class="mdui-divider"></div><br>
+   <div class="mdui-typo-subheading">请求参数</div>
+   <form id="api_edit_dlg_rest_parm_202" name="result" onsubmit="return false">
+      </form>
+   <button class="mdui-valign mdui-btn" onclick="api_edit_dlg_append(202,0)"><i class="mdui-icon material-icons mdui-text-color-theme-icon-icon mdui-float-left">add</i>  添加</button>
+      <br>
+   <button onclick="api_edit_dlg_save_btn(202)" class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">保存</button>
+   <br><br><br>
+  </div>
+  </div>
+    <div class="mdui-container mdui-col" id="api_card_200" href="javascript:sendMail('vip123456_1@qq.com')"> 
+   <div class="mdui-card mdui-hoverable" style="overflow:visible"href="javascript:sendMail('vip123456_1@qq.com');"> 
+    <div class="mdui-card-header" href="javascript:sendMail('vip123456_1@qq.com');"> 
+    <img class="mdui-card-header-avatar" src="img/mc.png">
+            <div class="mdui-card-header-title" style="margin-left:0">随机动漫视频 <div class="mybadge mdui-color-blue mdui-text-color-white">正常</div> <div class="mybadge mdui-color-red mdui-text-color-white">置顶</div></div> 
+      <div class="mdui-card-header-subtitle" style="margin-left:0"><i class="mdui-icon material-icons mdui-text-color-theme-icon subtitle-icon-text">sort</i> </div> 
+    </div>
+    <div class="mdui-card-menu"></div>
+    <div class="mdui-card-content mdui-text-truncate" style="word-wrap:break-word">漫剪视频</div> 
+    <div class="mdui-card-actions">
+     <button onclick="openUrl('?action=interface&amp;id=200')" class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-float-right">查看</button>
+         </div>
+   </div>
+  </div>
+  <div id="api_edit_dlg_200" class="mc-user-edit mdui-dialog">
+   <div class="mdui-dialog-title">
+    <button class="mdui-btn mdui-btn-icon" style="margin-bottom:5px" mdui-dialog-close=""><i class="mdui-icon material-icons mdui-text-color-theme-icon">arrow_back</i></button>   编辑接口</div>
+   <div class="mdui-dialog-content" style="padding:0 24px 0 24px">
+   <div class="mdui-typo-subheading">接口信息</div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口名称</label>
+     <input id="api_edit_dlg_api_name_200" class="mdui-textfield-input" type="text" value="随机动漫视频" required="">
+     <div class="mdui-textfield-error">名称不能为空</div>
+     <div class="mdui-textfield-helper">请填写接口名称</div>
+   </div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口介绍</label>
+     <textarea id="api_edit_dlg_api_info_200" class="mdui-textfield-input" type="text" required="">漫剪视频</textarea>
+     <div class="mdui-textfield-error">介绍不能为空</div>
+     <div class="mdui-textfield-helper">请填写接口介绍</div>
+   </div>
+   <div class="mdui-textfield mdui-textfield-floating-label">
+     <label class="mdui-textfield-label">接口地址</label>
+     <input id="api_edit_dlg_api_url_200" class="mdui-textfield-input" type="text" value="http://api.caonm.net/api/mjsp/m.php" required="">
+     <div class="mdui-textfield-error">地址不能为空</div>
+     <div class="mdui-textfield-helper">请填写完整路径，包含http协议头</div>
+   </div>
+   <div class="mdui-textfield">
+     <label class="mdui-textfield-label">示例参数</label>
+     <input id="api_edit_dlg_api_rest_parm_200" class="mdui-textfield-input" type="text" placeholder="（例：key1=value1&amp;key2=value2）" value="" oninput="api_edit_change_dlg_append(200,$(this).val())" required="">
+     <div class="mdui-textfield-error">参数不能为空</div>
+     <div class="mdui-textfield-helper">格式：参数名=参数值&amp;参数名=参数值（用于在接口文档展示）</div>
+   </div>
+   <div class="mdui-valign" style="width:100%;padding-top:14px;padding-bottom:14px">
+     <font class="mdui-float-left" style="width:100%;padding-left:-2px">请求方式</font>
+    <label class="mdui-checkbox mdui-float-right">
+    <input id="api_edit_dlg_rest_type_get_200" type="checkbox" checked="">
+    <i class="mdui-checkbox-icon"></i><font style="margin-left:-12px;margin-right:10px">GET</font></label>
+    <label class="mdui-checkbox mdui-float-right">
+    <input id="api_edit_dlg_rest_type_post_200" type="checkbox" disabled="">
+    <i class="mdui-checkbox-icon"></i><font style="margin-left:-12px">POST</font></label>
+   </div>
+   <div class="mdui-divider"></div>
+   <div class="mdui-typo-subheading">请求参数</div>
+   <form id="api_edit_dlg_rest_parm_200" name="result" onsubmit="return false">
+      </form>
+   <button class="mdui-valign mdui-btn" onclick="api_edit_dlg_append(200,0)"><i class="mdui-icon material-icons mdui-text-color-theme-icon-icon mdui-float-left">add</i>  添加</button>
+      <br>
+   <button onclick="api_edit_dlg_save_btn(200)" class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">保存</button>
+   <br><br><br>
+  </div>
+  </div>
+    
+ 
+    <div class="mdui-container mdui-col" id="api_card_269"> 
+   <div class="mdui-card mdui-hoverable" style="overflow:visible" href="javascript:sendMail('vip123456_1@qq.com');"> 
+    <div class="mdui-card-header" href="javascript:sendMail('vip123456_1@qq.com');">          
+   <div class="mdui-card-header-title" style="margin-left:0">结婚证 <div class="mybadge mdui-color-blue mdui-text-color-white">正常</div></div> 
+      <div class="mdui-card-header-subtitle" style="margin-left:0"><i class="mdui-icon material-icons mdui-text-color-theme-icon subtitle-icon-text">access_time</i> 更新于2022-11-22</div> 
+    </div>
+    
+     <button onclick="openUrl('?action=interface&amp;id=269')" class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-float-right">前往</button>
+         </div>
+   </div>
+  </div>
+  <div id="api_edit_dlg_269" class="mc-user-edit mdui-dialog">
+   <div class="mdui-dialog-title">
+    
+      <br><br><br>
+  </div>
+  </div>
+    
+  
+    
+    
+    
+
+
+
+
+
+
+     
+      <div id="livesearch"></div>
+  </div>
+  </div>
+  </div>
+      <div id="dlg_admin_feedback" class="mc-user-edit mdui-dialog" style="top:0px;min-width:100% !important;min-height:100% !important;border-radius:0 !important">
+   <div class="mdui-dialog-title">
+    <button class="mdui-btn mdui-btn-icon" style="margin-bottom:5px" mdui-dialog-close=""><i class="mdui-icon material-icons mdui-text-color-theme-icon">arrow_back</i></button>   接口反馈
+   </div>
+   <div class="mdui-dialog-content">
+    <div class="mdui-table-fluid" style="border-radius:0 !important"> 
+          <table class="mdui-table mdui-table-hoverable mdui-table-selectable"> 
+           <thead>
+            <tr> 
+             <th>反馈时间</th> 
+             <th>反馈接口</th> 
+             <th>反馈内容</th>
+             <th>反馈者IP</th>
+            </tr>
+           </thead> 
+           
+         </div> 
+                  <button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-m-b-4 mdui-color-theme-accent" onclick="delete_feedback();"><i class="mdui-icon material-icons">delete</i></button>
+           </div>
+  
+  </div>
+     <button id="fab_up" onclick="scrolTop('body_content');" class="mdui-fab mdui-fab-hide mdui-fab-fixed mdui-ripple mdui-m-b-4 mdui-color-theme-accent"> <i class="mdui-icon material-icons">expand_less</i> </button> 
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <script type="text/javascript" src="js/highlight.min.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/qrcode_js@1.0.0/qrcode.min.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+  <script type="text/javascript" src="js/index.js"> </script><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
+ 
+
+</div></div></body><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏--></html><!--!‭‪‭‬‎‎‭‫‏‬‎‏‭‪‫‭‬‫‬‏‏-->
